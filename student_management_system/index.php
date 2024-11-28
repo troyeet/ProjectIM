@@ -9,16 +9,15 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to the Student Management System</h1>
-    </header>
-
-    <nav>
-        <a href="#">Home</a>
+        <h1>Student Management System</h1>
+        <nav>
         <a href="add_student.php">Add Student</a>
         <a href="student_list.php">Student List</a>
-        <a href="login.php">Login</a>
-        <a href="signup.php">Sign Up</a>
+        <a href="logout.php">Logout</a>
     </nav>
+    </header>
+
+    
 
     <footer>
         <p>&copy; 2024 Student Management System</p>

@@ -97,10 +97,13 @@ $_SESSION;
 <body>
     <div class="container">
         <h2>Login</h2>
-        <form action="student_homepage.php" method="POST">
+        <form action="index.php" method="POST">
             <input type="text" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Password" required>
             <button type="submit">Login</button>
+            <div class="row text-center">
+                            <small style="color: black;">Don't have an account? <a href="signup.php">Sign up</a></small>
+                        </div>  
         </form>
     </div>  
 </body>
