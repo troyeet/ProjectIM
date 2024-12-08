@@ -50,29 +50,25 @@ $conn->close();
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        Student Management System
-    </header>
 
     <!-- Navigation Bar -->
     <div class="nav">
+    <div class="profile">
+        <div class="welcome">
+            Welcome, User!
+        </div>
+    </div>
         <div class="search-bar">
             <input type="text" id="searchInput" placeholder="Search...">
             <button id="searchBtn">Search</button>
         </div>
 
         <div class="user-account">
-            <a href="logout.php">logout</a>
+            <a href="logout.php">Logout</a>
         </div>
     </div>
 
-    <!-- Profile Section -->
-    <div class="profile">
-        <div class="welcome">
-            Welcome
-        </div>
-    </div>
+    
 
     <!-- Add Student Button -->
     <div class="add-student-btn">

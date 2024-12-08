@@ -41,9 +41,6 @@ $conn->close();
 
 </head>
 <body>
-    <header>
-        Student Management System
-    </header>
 
     <div class="nav">
         <div class="search-bar">
@@ -53,7 +50,7 @@ $conn->close();
         </div>
 
         <div class="user-account">
-            <a href="logout.php">logout</a>
+            <a href="Logout.php">Logout</a>
         </div>
     </div>
 
@@ -62,7 +59,7 @@ $conn->close();
     </div>
 
     <div class="add-student-btn">
-      <a href="add_student.php" class="add-btn">Add Student</a> 
+      <a href="add_student_admin.php" class="add-btn">Add Student</a> 
     </div>
 
     <table>

@@ -1,29 +1,18 @@
 /* General Reset and Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom right, #111111, #333333);
+    background: linear-gradient(to bottom right,  #fae8d2,  #fae8d2);
     color: #ffffff;
-}
-
-/* Header Styles */
-header {
-    background: linear-gradient(to right, #ff8000, #ff5500);
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .nav {
     display: flex;
     justify-content: center; /* Center content horizontally */
     align-items: center;
-    background: #222222;
+    background: white;
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    position: relative;
+    position: relative; 
 }
 
 .search-bar {
@@ -43,8 +32,8 @@ header {
     border: 1px solid #ff5500;
     border-radius: 20px;
     width: 220px;
-    background-color: #333333;
-    color: #ffffff;
+    background-color: white;
+    color: #000000;
 }
 
 .nav button {
@@ -68,31 +57,13 @@ header {
     font-weight: bold;
 }
 
-/* Profile Section */
-.profile {
-    display: flex;
-    align-items: center;
-    background: #222222;
-    margin: 20px auto;
-    padding: 15px;
-    border-radius: 15px;
-    width: 90%;
-    max-width: 800px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
 
-.profile img {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    margin-right: 20px;
-    border: 3px solid #ff5500;
-}
 
 .profile .welcome {
     font-size: 1.5rem;
     color: #ff8000;
     font-weight: bold;
+    margin-left: -450px;
 }
 
 .add-student-btn {
@@ -102,7 +73,7 @@ header {
 }
 
 .add-btn {
-    background-color: #ff5500;
+    background-color: #ff8000;
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -114,7 +85,7 @@ header {
 }
 
 .add-btn:hover {
-    background-color: #ff8000;
+    background-color: #ff5500;
     box-shadow: 0 5px 15px rgba(255, 85, 0, 0.3);
 }
 
@@ -124,7 +95,7 @@ table {
     max-width: 1000px;
     margin: 20px auto;
     border-collapse: collapse;
-    background: #222222;
+    background: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -133,18 +104,18 @@ table {
 table th, table td {
     text-align: center;
     padding: 15px;
-    border-bottom: 1px solid #444444;
-    color: #ffffff;
+    border-bottom: 1px solid orange;
+    color: orange;
 }
 
 table th {
-    background: #ff5500;
-    color: white;
+    background: white;
+    color: orange;
     font-size: 1rem;
 }
 
 table tr:hover {
-    background-color: #333333;
+    background-color:  #fae8d2;
 }
 
 table a {
@@ -208,11 +179,11 @@ table a {
 footer {
     text-align: center;
     padding: 15px;
-    background: linear-gradient(to right, #ff5500, #ff8000);
+    background-color: #ff8000;
     color: white;
     font-size: 0.9rem;
     font-weight: bold;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
-    margin-top: 30px;
+    margin-top: 282px;
 }

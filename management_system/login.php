@@ -2,6 +2,8 @@
 session_start();
 include 'server/connection.php';
 
+$error = ""; // Variable to store error message
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = mysqli_real_escape_string($conn, $_POST['username']);
     $password = mysqli_real_escape_string($conn, $_POST['login_password']);
@@ -20,18 +22,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Redirect based on user type
             if ($user['user_type'] == 'a') {
-                // If user is an admin, redirect to admin_page.php
                 header("Location: admin_page.php");
             } elseif ($user['user_type'] == 'u') {
-                // If user is a regular user, redirect to user_page.html
                 header("Location: user_page.php");
             }
             exit;
         } else {
-            echo "Invalid password!";
+            $error = "Invalid password!";
         }
-    } else  {
-        echo "No user found with this email!";
+    } else {
+        $error = "No user found with this email!";
     }
 }
 ?>
@@ -52,9 +52,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form action="" method="POST">
             <div class="form-group">
                 <input type="username" id="username" name="username" placeholder="Username" required>
+                <?php if (!empty($error) && strpos($error, 'email') !== false): ?>
+                    <p class="error-message"><?php echo $error; ?></p>
+                <?php endif; ?>
             </div>
             <div class="form-group">
                 <input type="password" id="login_password" name="login_password" placeholder="Password" required>
+                <?php if (!empty($error) && strpos($error, 'password') !== false): ?>
+                    <p class="error-message"><?php echo $error; ?></p>
+                <?php endif; ?>
             </div>
             <p class="forgot"><a href="/forgot-password">Forgot your password?</a></p>
             <div class="form-group">
@@ -66,5 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </form>
     </div>
 </div>
+
 </body>
 </html>
+

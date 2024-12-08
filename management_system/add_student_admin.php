@@ -35,13 +35,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Student</title>
-    <link rel="stylesheet" href="css/addStudent.css">
+    <link rel="stylesheet" href="css/addStudentAdmin.css">
 </head>
 <body>
 
     <!-- Header -->
     <header>
-    <a href='user_page.php'>Back to Home</a>
         Add New Student
     </header>
 
@@ -79,8 +78,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <option value="i">Irregular</option>
                 <option value="g">Graduate</option>
             </select>
-
             <button type="submit" class="btn">Add Student</button>
+            
+            <div class="submit">
+            <a href="admin_page.php" class="btn">Cancel</a> 
+            </div>
         </form>
     </div>
 

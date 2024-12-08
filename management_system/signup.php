@@ -45,6 +45,7 @@ $conn->close();
 </head>
 <body>
     <div class="form-container">
+    <a href='login.php'>Back to login</a>
         <h2>Sign Up</h2>
         <?php if (isset($error)): ?>
             <p class="message"><?php echo $error; ?></p>

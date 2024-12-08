@@ -148,7 +148,7 @@ if (isset($_GET['id'])) {
 
             <div class="buttons">
                 <button type="submit">Update</button>
-                <a href="admin_page.php">Cancel</a>
+                <button type="submit">Cancel</button>
             </div>
         </form>
     </div>
